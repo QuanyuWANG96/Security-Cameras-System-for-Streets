@@ -1,0 +1,24 @@
+#!/bin/bash
+
+COUNTER=5
+i=0
+if [ -d "./runTime" ];then
+   rm -rf "./runTime"
+   mkdir "./runTime"
+else 
+   mkdir "./runTime"
+fi
+
+while [ $COUNTER -lt 55 ]
+do
+    while [ $i -lt 10 ]
+    do
+        /home/agurfink/ece650/graphGen/graphGen $COUNTER  | ./build/ece650-prj
+       if [ $COUNTER -gt 10 ];then
+          wait 6
+       fi
+       i=`expr $i + 1`
+    done
+    i=0
+    COUNTER=`expr $COUNTER + 5`
+done
