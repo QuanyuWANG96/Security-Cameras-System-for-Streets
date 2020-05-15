@@ -1,0 +1,136 @@
+Marking #72: StudentInfo(repo='uw-ece650-f19-a3-QuanyuWANG96', first='Quanyu', last='Wang', watiam='q426wang', studentid=20812011, email='q426wang@uwaterloo.ca')
+Mark = 0
+
+Running test 0 (idle run, try not to crash):	
+ +20 (/20)
+Running test 1 (idle run, check if output is valid, expect to get 3 graphs):
+
+No output received on try 1
+Output is:
+--------------
+V 17
+E {<11,14>,<11,16>,<14,15>,<3,15>,<3,10>,<9,10>,<1,9>,<2,13>,<1,2>,<7,16>,<7,8>,<5,7>,<6,7>,<0,11>,<4,11>,<0,3>,<3,9>,<2,9>,<2,12>}
+--------------
+
+Status:	Graph validation succeeded
+Parse result:
+	(17, [(11, 14), (11, 16), (14, 15), (3, 15), (3, 10), (9, 10), (1, 9), (2, 13), (1, 2), (7, 16), (7, 8), (5, 7), (6, 7), (0, 11), (4, 11), (0, 3), (3, 9), (2, 9), (2, 12)])
+
+Expected 3 graphs, found: 1
+Test 1 mark: +5 (/15)
+Running test 2 (Error check arguments):
+	running: ./ece650-a3 -l 1
+
+Output is:
+--------------
+
+--------------
+Error not reported!
+ Expected to find: "Error: error message"
+Test 2 mark: +0 (/5)
+Running test 3 (idle run, check if output is valid):
+
+Output is:
+--------------
+V 32
+E {<5,28>,<5,9>,<2,9>,<2,7>,<7,27>,<21,23>,<8,21>,<3,28>,<3,16>,<16,29>,<6,24>,<12,24>,<0,26>,<17,26>,<2,17>,<2,30>,<7,11>,<7,10>,<0,3>,<3,19>,<1,19>,<13,26>,<25,26>,<14,25>,<22,23>,<10,22>,<9,15>,<9,17>,<17,18>,<14,18>,<6,22>,<22,31>,<20,21>,<4,21>}
+
+~~~~~
+Status:	Graph validation succeeded
+Sending query	s 0 16
+~~~~~
+
+0-3-16
+V 12
+E {<0,11>,<1,11>,<6,9>,<5,10>,<5,7>,<2,7>,<2,11>,<4,11>,<6,7>,<3,7>,<8,9>}
+
+~~~~~
+Parsed response:	('P', [0, 3, 16])
+~~~~~
+
+--------------
+
+Test 3 mark:, +20 (/20)
+Running test 4 (check if rgen produces valid output, expect to get 3 graphs):
+	run: ./rgen -l 6 -s 3 -n 3 -c 10
+
+Output is:
+--------------
+a "SemIjzgE" (2,-4)  (-3,-3)  (5,-2)  
+a "SrIBhIfJ" (7,1)  (-3,-10)  
+a "NpdHbcPh" (1,-5)  (-1,0)  (-4,-5)  
+g
+r "SemIjzgE"
+r "SrIBhIfJ"
+r "NpdHbcPh"
+a "GtNqRUSW" (7,-10)  (0,10)  
+a "FsZGDTJw" (2,-7)  (-8,7)  (-10,5)  (-7,-8)  
+g
+r "GtNqRUSW"
+r "FsZGDTJw"
+a "bHYhCQFo" (-3,2)  (-7,-8)  (-10,3)  (8,-4)  
+a "jzbTOEdF" (-2,-5)  (-8,5)  (-10,0)  
+a "SJKLNxxI" (8,0)  (-8,6)  (7,-1)  (-3,-7)  
+g
+
+--------------
+Output without errors:
+
+--------------
+a "SemIjzgE" (2,-4)  (-3,-3)  (5,-2)  
+a "SrIBhIfJ" (7,1)  (-3,-10)  
+a "NpdHbcPh" (1,-5)  (-1,0)  (-4,-5)  
+g
+r "SemIjzgE"
+r "SrIBhIfJ"
+r "NpdHbcPh"
+a "GtNqRUSW" (7,-10)  (0,10)  
+a "FsZGDTJw" (2,-7)  (-8,7)  (-10,5)  (-7,-8)  
+g
+r "GtNqRUSW"
+r "FsZGDTJw"
+a "bHYhCQFo" (-3,2)  (-7,-8)  (-10,3)  (8,-4)  
+a "jzbTOEdF" (-2,-5)  (-8,5)  (-10,0)  
+a "SJKLNxxI" (8,0)  (-8,6)  (7,-1)  (-3,-7)  
+g
+
+--------------
+Validation result:
+s 3 n 2 x 7 y 10
+s 2 n 3 x 10 y 10
+s 3 n 3 x 10 y 8
+
+Test 4 mark: +20 (/20)
+Running test 5 (replace rgen, check shortest path):
+Replaced rgen returned:
+
+            a "Weber Street" (2,-1) (2,2) (5,5) (5,6) (3,8)
+            a "King Street S" (4,2) (4,8)
+            a "Davenport Road" (1,4) (5,8)
+            g
+        
+Output is:
+--------------
+V 10
+E {<6,8>,<7,8>,<1,9>,<0,1>,<2,8>,<1,8>,<1,3>,<1,4>,<1,5>}
+
+~~~~~
+Status:	Graph validation succeeded
+Sending queries:
+s 0 7
+s 3 7
+~~~~~
+
+0-1-8-7
+3-1-8-7
+
+
+--------------
+
+Test 5 mark: +20 (/20)
+
+
+--------------
+Finished marking
+Total mark: 85 / 100
+Final mark: 85
