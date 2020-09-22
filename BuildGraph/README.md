@@ -1,7 +1,7 @@
 # Build Graph
 The project is to help the local police department with their installation of security cameras at traffic intersections. In this part, we will map street information to an undirected graph.
 
-You can find the details on [street to graph]() and [FAQ]().
+You can find the details on [street to graph](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/BuildGraph/ece650.a1.pdf) and [FAQ](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/BuildGraph/ece650.a1.faq.pdf).
 
 # Commands
 `a` add a street
