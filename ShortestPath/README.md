@@ -1,7 +1,7 @@
 # Find Shortest Path
 This part was written in C++ and run in Linux. It will find the shortest path between the start vertex to the end vertex in a graph (G=<V,E>).
 
-You can find more details on []().
+You can find more details on [shortestPath](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/ShortestPath/ece650.a2.pdf).
 
 # Function
 Take input from standard input and output to standard output. Errors can be output to stantdard output but should always start with "Error:". Command `s a b` means to find the shortest path from `a` to `b`.
