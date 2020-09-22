@@ -1,28 +1,14 @@
-# ECE650 : Final Project
+# Security Camera System
+I used multithreading for three algorithms to solve the minimal vertex cover problem. One thread is CNF-SAT method and the other two threads are approximate algorithms. This program standout and stderror to screen, output the Approximate Ratio and Running Time to dictionary `runTime`. It is completed by Run Zeng and me together. 
 
-Replace FIRST_NAME, LAST_NAME, WATIAM, and STUDENT_ID, EMAIL in
-`user.yml` by your first and last name, WatIAM id, student number, and
-email, respectively. The information must be entered for all members
-of your tema. Whenever possible, please use ASCII characters.
+For more details, please click [ece-project](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/securityCamerasSystem/ece650.project.pdf)
 
-Do not change the format `user.yml`. We will parse it
-automatically. Only enter the information requested.
+The analysis of the running time of three method, please [click report](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/securityCamerasSystem/report.pdf).
 
-The main executable file for your solution to the assignment should be
-`ece650-prj`.
+# Execution
 
-Do not include MiniSat in your repository. We will clone it in your
-repository using the command. This is exactly the same as was done in
-Assignment 4.
+In order to run this program, please git clone Minisat package from https://github.com/agurfinkel/minisat.git
 
-```
-git clone https://github.com/agurfinkel/minisat
-```
+`ex` is shell script to run ece650-driver.cpp automatically.
 
-Note that for the project you have to create a `CMakeLists.txt` on
-your own. You can use examples from previous assignments or from
-course examples on GitHub.
-
-Do not forget to include your report in `report.pdf`
-
-Commit your changes and submit on GitHub.
+ 
