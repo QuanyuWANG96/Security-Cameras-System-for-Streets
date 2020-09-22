@@ -1,24 +1,24 @@
-# ECE650 : Assignment 4
+# BFS
+The requirements refered to [encoding](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/BFS/a4_encoding.pdf) and [minisat specification](https://github.com/QuanyuWANG96/Security-Cameras-System-for-Streets/blob/master/BFS/ece650.a4.pdf)
 
-Replace FIRST_NAME, LAST_NAME, WATIAM, and STUDENT_ID, EMAIL in
-`user.yml` by your first and last name, WatIAM id, student number, and
-email, respectively. Whenever possible, please use ASCII characters.
 
-Do not change the format `user.yml`. We will parse it
-automatically. Only enter the information requested.
+# Function
+Use `MiniSat SAT solver` to solve Minimal Vertex Cover problem. 
 
-The main file for your solution to the assignment should be
-`ece650-a4.cpp`. You can use `test.cpp` for your unit tests.
+The minimal vertext cover is to find the most effective locations to install cameras.
 
-You will need to checkout minisat to the main directory of the project.
-You can do this using
-
+# Sample run
+### Input
 ```
-git clone https://github.com/agurfinkel/minisat
+$ ./ece650-a4 V 5 E {<0,4>,<4,1>,<0,3>,<3,4>,<3,2>,<1,3>}
+```
+### Output
+```
+3 4
 ```
 
+# Execution
+```
+cd PROJECT && mkdir build && cd build && cmake ../
+```
 
-You might need to modify `CMakeLists.txt` if you are adding additional
-source files for your code and/or tests.
-
-Commit your changes and submit on GitHub.
